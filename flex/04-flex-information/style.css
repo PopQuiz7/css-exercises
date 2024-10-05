@@ -1,3 +1,16 @@
+/* *{
+  border: 1px solid black;
+} */
+
+/*- All items are centered on the page (horizontally, not vertically).
+- The title is centered on the page.
+- There is 32px between the title and the 'items.'
+- There is 52px between each item.
+- The items are arranged horizontally on the page.
+- The items are only 200px wide and the text wraps.
+- The item text is centered.
+*/
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,12 +23,15 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom:32px;
 }
 
 .flex {
+  flex-basis:auto;
   display:flex;
-  flex-direction: column; 
-
+  /* flex-direction: column;  */
+  justify-content: center;
+  align-items: center;
 }
 
 .flex .title{
@@ -25,6 +41,35 @@ img {
 
 .flex .text {
   flex: 1 1 auto;
+}
+
+.barberry{
+  width:200px;
+  align-self:flex-start;
+  text-align: center;
+  margin-right: 52px;
+}
+
+.chili{
+  width:200px;
+  align-self:flex-start;
+  text-align: center;
+  margin-right: 52px;
+
+}
+
+.pepper{
+  width:200px;
+  align-self:flex-start;
+  text-align: center;
+  margin-right: 52px;
+
+}
+
+.saffron{
+  width:200px;
+  align-self:flex-start;
+  text-align: center;
 }
 
 /* do not edit this footer */
