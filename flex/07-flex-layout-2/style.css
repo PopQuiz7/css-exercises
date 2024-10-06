@@ -48,7 +48,8 @@ body {
   margin: 0;
   padding: 10px;
   flex-flow: row wrap;
-  flex-basis:auto;
+
+  width:300px;
 }
 
 a {
@@ -63,9 +64,7 @@ a {
 .cards{
   padding:48px;
   display: flex;
-  align-items: flex-start;
   flex-wrap:wrap;
-  justify-content:flex-start;
 }
 
 ul{
