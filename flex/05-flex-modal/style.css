@@ -1,3 +1,7 @@
+/* *{
+  margin:6px;
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -15,7 +19,11 @@ body {
   justify-content: center;
 }
 
+
 .modal {
+  
+  display:flex;
+  padding:16px;
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -35,6 +43,25 @@ body {
   justify-content: center;
 }
 
+.flex{
+  flex-basis:auto;
+  display:flex;
+  justify-content:center;
+  align-items: flex-start;
+  flex-direction:column;
+}
+
+.header{
+  font-weight:bold;
+  align-self: flex-start;
+  flex-wrap:nowrap;
+}
+
+.text {
+  align-self:flex-end;
+  margin-bottom:8px;
+}
+
 .close-button {
   background: #eee;
   border-radius: 50%;
@@ -48,9 +75,11 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
 }
 
 button {
+
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
@@ -66,4 +95,19 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.part2{
+  flex-direction:column;
+}
+
+.header1{
+  justify-content:space-between;
+  display:flex;
+  margin:0;
+
+}
+
+.part1{
+  margin-right:16px;
 }
